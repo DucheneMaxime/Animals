@@ -11,7 +11,7 @@ public class Herbivorous extends abstractRegime {
 		System.out.println("I eat vegetables : "+food.toString());
 	}
 
-	@Override
+	// On print ce que mange un herbivore
 	public String eat() {
 		return this.food.toString();
 	}

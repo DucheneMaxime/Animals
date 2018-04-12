@@ -7,6 +7,7 @@ import food.animal.Rabbit;
 public class TestHeritage {
 
 	public static void main(String[] args) {
+		// Tests avec un lion, une hyène, deux lapins et un homme
 		Lion l = new Lion(12, 80.5, 1.20);
 		System.out.println(l.toString());
 		Rabbit r = new Rabbit(2, 5.5, 0.2);

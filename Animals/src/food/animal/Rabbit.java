@@ -8,6 +8,7 @@ public class Rabbit extends Animal {
 		super(0, 0.0, 0.0, "rabbit");
 	}
 	
+	//Le Rabbit est un Animal avec un regime
 	public Rabbit(int age, double weight, double height) {
 		super(age, weight, height, "rabbit");
 		this.regime = new Herbivorous();

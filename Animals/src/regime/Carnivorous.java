@@ -7,6 +7,7 @@ public class Carnivorous extends abstractRegime{
 		super("carnivorous");
 	}
 
+	//On print ce que mange un carnivore
 	public String eat() {
 		return this.food.toString();
 	}
