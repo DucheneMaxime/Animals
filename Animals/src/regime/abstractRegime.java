@@ -1,19 +1,27 @@
 package regime;
 
-import animal.Animal;
 import food.Food;
+import food.Meat;
+import food.Vegetables;
+import food.animal.Animal;
+import food.animal.Rabbit;
 
 public abstract class abstractRegime extends Animal {
-	private String regime;
+	public Food food;
 
-	public abstractRegime() {
+	public abstractRegime(String regime) {
 		super();
-		this.regime=regime;
+		switch(regime) {
+		case("herbivorous"):
+			this.food = new Vegetables();
+		break;
+		case("carnivorous"):
+			this.food = new Meat();
+		break;
+		case("omnivorous"):
+			this.food = new Rabbit();
+		}
 	}
 
-	public abstract void eat(Food food);
-	
-	public String eat() {
-		return "I eat several things";
-	}
+	public abstract String eat();
 }

@@ -1,8 +1,8 @@
-package animal;
-import regime.abstractRegime;
+package food.animal;
 import food.Food;
+import regime.abstractRegime;
 
-public abstract class Animal {
+public abstract class Animal extends Food {
 	private int age;
 	private double weight;
 	private double height;
@@ -35,6 +35,7 @@ public abstract class Animal {
 		res+=this.name;
 		res+=", and ";
 		res+=getRegime().eat();
+		res+=". I weight "+this.weight+"kg and my size is "+this.height+"m.";
 		return res;
 	}
 }

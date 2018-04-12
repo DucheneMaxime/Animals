@@ -4,10 +4,14 @@ import food.Food;
 public class Carnivorous extends abstractRegime{
 	
 	public Carnivorous() {
-		super();
+		super("carnivorous");
+	}
+
+	public String eat() {
+		return this.food.toString();
 	}
 
 	public void eat(Food food) {
-		System.out.println("I eat meat : "+food.toString());
+		
 	}
 }

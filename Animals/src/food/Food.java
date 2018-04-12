@@ -1,20 +1,11 @@
 package food;
 
-public class Food {
-	private String name;
-	private String color;
-	
-	public Food(String name, String color) {
-		this.name=name;
-		this.color=color;
-	}
+public abstract class Food {
 	
 	public Food() {
-		this("Nothing", "none");
+		super();
 	}
-	
-	public String toString() {
-		return this.color+" "+this.name;
-	}
+		
+	public abstract String toString();
 
 }

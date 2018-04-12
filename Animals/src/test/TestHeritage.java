@@ -1,6 +1,8 @@
 package test;
-import animal.Lion;
-import animal.Rabbit;
+import food.animal.Hyena;
+import food.animal.Lion;
+import food.animal.Man;
+import food.animal.Rabbit;
 
 public class TestHeritage {
 
@@ -9,6 +11,10 @@ public class TestHeritage {
 		System.out.println(l.toString());
 		Rabbit r = new Rabbit(2, 5.5, 0.2);
 		System.out.println(r.toString());
+		Hyena h = new Hyena(2, 5.5, 0.2);
+		System.out.println(h.toString());
+		Man m = new Man(2, 5.5, 0.2);
+		System.out.println(m.toString());
 	}
 
 }
